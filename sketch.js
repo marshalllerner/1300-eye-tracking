@@ -42,6 +42,7 @@ function setup() {
 
       //increment the global index
     }, 
+    //this is where the timeout goes :)
     );
   }
 }
