@@ -19,7 +19,7 @@ function processData(allText) {
 
   //Here's where you need to write a loop that
   //goes through all of csv, at each line, and
-  //pushes a heatmap data point onto the lines stack
+  //pushes a heatmap data point onto the datapoints array
   //with the proper x and y values ()
   //A heatmap data point looks like this object:
   //{ x: ?, // x coordinate of the datapoint, a float 
