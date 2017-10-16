@@ -6,13 +6,14 @@ function preload() {
   table = loadTable("PUT YOUR CSV NAME HERE", "csv", "header");
 }
 
-//create a global index, and initialize it to 1!
+//create a global index, and initialize it to 1
 index = 1;
+
 function setup() {
   //create canvas and load background image
-  //make sure that your background image isn't
+  //(make sure that your background image isn't
   //too big of a file, as its going to be 
-  //rerendered a lot
+  //rerendered a lot)
 
   //initialize variables and store the columns in
   //them, using the getColumn accessor
@@ -39,7 +40,7 @@ function setup() {
 
       //call redraw()
 
-      //incredment the global index
+      //increment the global index
     }, 
     //add the proper
     );
