@@ -42,7 +42,6 @@ function setup() {
 
       //increment the global index
     }, 
-    //add the proper
     );
   }
 }
