@@ -11,8 +11,7 @@ $(document).ready(function() {
   var two = document.getElementById("two");
   style = window.getComputedStyle(one);
   wdt = style.getPropertyValue("width");
-  // TODO: change the wdt variable here to what the original resolution of your screenshot (probably about 1920 if you had it fullscreen)
-  two.style.width = wdt;
+  two.style.width = 1920;
 });
 
 const CSV_NAME = 'TODO: put your CSV filename here';
@@ -32,7 +31,7 @@ function processData(allText) {
   //Split csv lines by return \n and by commas
   var allTextLines = allText.split(/\r\n|\n/);
   var datapoints = [];
-  
+
   // allTextLines is an array that has each line from
   // your data file as an element
   //
@@ -47,7 +46,7 @@ function processData(allText) {
   // var myfloat = parseFloat(mystring.substring(1, mystring.length-1));
 	// A heatmap data point looks like this object:
   //  {
-  //    x: ?, // x coordinate of the data point, a float 
+  //    x: ?, // x coordinate of the data point, a float
   //    y: ?, // y coordinate of the data point, a float
   //    value: 1 // leave at 1, but feel free to tweak for a hotter-looking heatmap
   //  }
@@ -56,7 +55,7 @@ function processData(allText) {
   // and put each data point in the datapoints array.
   // This datapoints array is then plotted on the heatmap (that part is already written below)
   //
-  // Note that there is one more "TO DO" near the bottom of this file
+  // Note that there are two more "TODO"s near the bottom of this file
 
 
 
@@ -76,7 +75,7 @@ function processData(allText) {
   //Initializes a heatmap data object with the lines
   //stack datapoints
   var data = {
-    max: 10, // just sets the maximum value to be displayed as red in the heatmap
+    max: 4, // TODO: sets the maximum value to be displayed as red in the heatmap. Find a value (different for each log file) such that there are a couple red areas
     min: 0,
     data: datapoints
   };

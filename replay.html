@@ -32,7 +32,7 @@ function sleep(ms) {
 async function processData(allText) {
 	var canvas = document.getElementById("myCanvas");
 	var ctx = canvas.getContext("2d");
-	
+
   //split csv lines by return \n and by commas
   var allTextLines = allText.split(/\r\n|\n/);
 
@@ -63,7 +63,12 @@ async function processData(allText) {
   //
   // One way to do things periodically is using the modulus operator
   // For example, if the variable i is incremented in a loop,
-  // then i % 100 === 0 is true every 100 loops
+  // then i % 200 === 0 is true every 200 loops
+  //
+  // You must set the variable:
+  // ctx.fillStyle
+  //  which can be a color, like "rgb(255, 0, 0)" for red (keep the quotes).
+  //  Set this before the ctx.fillRect() function call
   //
   // The functions that will be handy are:
   //
@@ -77,10 +82,7 @@ async function processData(allText) {
   //   to draw a dot at x,y with width w and height h
   //   (select a small width and height since it's just drawing a dot)
   //
-  // The variables you can set are:
-  // ctx.fillStyle
-  //   which can be a color, like "rgb(255, 0, 0)" for red (keep the quotes).
-  //   Set this before the ctx.fillRect() function call
+
 
 
 
